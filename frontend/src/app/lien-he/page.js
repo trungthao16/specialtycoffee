@@ -1,130 +1,173 @@
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+'use client';
 
-export const metadata = {
-  title: 'Liên Hệ - Specialty Coffee Space',
-  description: 'Liên hệ với chúng tôi để mua sỉ/lẻ cà phê hạt specialty, đặt lịch workshop pha chế hoặc đóng góp ý kiến.',
-  alternates: {
-    canonical: '/lien-he',
-  },
-};
+import { useState } from 'react';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 
 export default function ContactPage() {
+  const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
+  const [status, setStatus] = useState({ type: null, message: '' });
+  const [loading, setLoading] = useState(false);
+
+  const breadcrumbItems = [
+    { name: 'Liên hệ', href: '/lien-he' },
+  ];
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatus({ type: null, message: '' });
+
+    // Mock contact submission delay
+    setTimeout(() => {
+      setLoading(false);
+      setStatus({
+        type: 'success',
+        message: 'Cảm ơn bạn đã liên hệ! Yêu cầu của bạn đã được gửi đi thành công. Chúng tôi sẽ phản hồi trong vòng 24 giờ.',
+      });
+      setFormData({ name: '', email: '', subject: '', message: '' });
+    }, 1200);
+  };
+
   return (
-    <div className="bg-stone-950 min-h-screen py-16 text-stone-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-        {/* Header */}
-        <div className="text-center space-y-4">
-          <span className="text-xs text-amber-500 font-bold uppercase tracking-widest bg-amber-700/10 px-4 py-1.5 rounded-full border border-amber-700/20">
-            Get In Touch
-          </span>
-          <h1 className="text-4xl md:text-6xl font-serif font-black text-stone-100 mt-2">Liên Hệ Với Chúng Tôi</h1>
-          <p className="text-stone-400 max-w-xl mx-auto mt-2 leading-relaxed">
-            Chúng tôi luôn lắng nghe mọi ý kiến và sẵn sàng đồng hành cùng bạn trên hành trình khám phá hương vị cà phê specialty.
+    <div className="bg-stone-950 min-h-screen py-12 text-stone-300 font-sans">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+        {/* Breadcrumbs */}
+        <Breadcrumbs items={breadcrumbItems} />
+
+        {/* Title */}
+        <div className="text-center space-y-2">
+          <h1 className="text-4xl font-serif font-black text-stone-100">Liên Hệ Với Chúng Tôi</h1>
+          <p className="text-stone-400 text-sm max-w-md mx-auto">
+            Mọi ý kiến đóng góp, phản hồi hoặc yêu cầu tư vấn hợp tác đại lý, vui lòng liên hệ theo biểu mẫu dưới đây.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <h2 className="text-2xl md:text-3xl font-serif font-bold text-stone-100">Thông Tin Cửa Hàng</h2>
-            <p className="text-sm leading-relaxed text-stone-400">
-              Hãy ghé qua không gian của chúng tôi để cùng thưởng thức những tách Pour Over chất lượng cao được pha chế ngay tại quầy bar mở.
-            </p>
-
-            <div className="space-y-6">
-              <div className="flex gap-4">
-                <div className="p-3 bg-amber-700/10 text-amber-500 rounded-xl h-fit border border-amber-700/25">
-                  <MapPin className="h-6 w-6" />
-                </div>
+        {/* Split Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pt-4">
+          {/* Info Side (4 cols) */}
+          <div className="md:col-span-4 space-y-6">
+            <h3 className="text-xl font-serif font-bold text-stone-100 border-b border-stone-900 pb-3">Thông Tin Liên Hệ</h3>
+            
+            <div className="space-y-4 text-sm">
+              <div className="flex gap-3">
+                <MapPin className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="font-bold text-stone-200">Địa chỉ</h3>
-                  <p className="text-sm mt-1 text-stone-400">123 Đường Cà Phê, Quận 1, TP. Hồ Chí Minh</p>
+                  <h5 className="font-bold text-stone-200">Địa chỉ cửa hàng</h5>
+                  <p className="text-stone-400 mt-1">123 Đường Cà Phê, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh</p>
                 </div>
               </div>
 
-              <div className="flex gap-4">
-                <div className="p-3 bg-amber-700/10 text-amber-500 rounded-xl h-fit border border-amber-700/25">
-                  <Clock className="h-6 w-6" />
-                </div>
+              <div className="flex gap-3">
+                <Phone className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="font-bold text-stone-200">Giờ làm việc</h3>
-                  <p className="text-sm mt-1 text-stone-400">Thứ 2 - Thứ 6: 07:00 - 22:00</p>
-                  <p className="text-sm text-stone-400">Thứ 7 - Chủ Nhật: 08:00 - 22:30</p>
+                  <h5 className="font-bold text-stone-200">Hotline tư vấn</h5>
+                  <p className="text-stone-400 mt-1">0123 456 789</p>
                 </div>
               </div>
 
-              <div className="flex gap-4">
-                <div className="p-3 bg-amber-700/10 text-amber-500 rounded-xl h-fit border border-amber-700/25">
-                  <Phone className="h-6 w-6" />
-                </div>
+              <div className="flex gap-3">
+                <Mail className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="font-bold text-stone-200">Điện thoại</h3>
-                  <p className="text-sm mt-1 text-stone-400">0123 456 789</p>
+                  <h5 className="font-bold text-stone-200">Email phản hồi</h5>
+                  <p className="text-stone-400 mt-1">contact@specialtycoffee.space</p>
                 </div>
               </div>
 
-              <div className="flex gap-4">
-                <div className="p-3 bg-amber-700/10 text-amber-500 rounded-xl h-fit border border-amber-700/25">
-                  <Mail className="h-6 w-6" />
-                </div>
+              <div className="flex gap-3">
+                <Clock className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="font-bold text-stone-200">Email</h3>
-                  <p className="text-sm mt-1 text-stone-400">contact@specialtycoffee.space</p>
+                  <h5 className="font-bold text-stone-200">Giờ làm việc</h5>
+                  <p className="text-stone-400 mt-1">Thứ 2 - Thứ 6: 07:00 - 22:00<br />Thứ 7 - CN: 08:00 - 22:30</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Contact Form */}
-          <div className="bg-stone-900/40 border border-stone-850 p-8 rounded-3xl shadow-xl">
-            <h3 className="text-2xl font-serif font-bold text-stone-100 mb-6">Gửi Lời Nhắn</h3>
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {/* Form Side (8 cols) */}
+          <div className="md:col-span-8 bg-stone-900/30 border border-stone-900 p-8 rounded-3xl space-y-6 shadow-xl">
+            <h3 className="text-xl font-serif font-bold text-stone-100 border-b border-stone-900 pb-3">Gửi Lời Nhắn Trực Tuyến</h3>
+
+            {status.message && (
+              <div
+                className={`p-4 rounded-xl text-sm font-medium ${
+                  status.type === 'success' ? 'bg-amber-600/10 text-amber-500 border border-amber-600/20' : 'bg-red-600/10 text-red-500 border border-red-650/20'
+                }`}
+              >
+                {status.message}
+              </div>
+            )}
+
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <label className="block text-xs font-semibold uppercase text-stone-400 tracking-wider">Họ và Tên</label>
+                  <label className="block text-xs font-bold uppercase text-stone-400">Họ và Tên</label>
                   <input
                     type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleInputChange}
                     required
-                    className="w-full bg-stone-950 border border-stone-800 focus:border-amber-700 text-stone-200 rounded-xl px-4 py-3 text-sm focus:outline-none transition-colors"
-                    placeholder="Nguyễn Văn A"
+                    className="w-full bg-stone-950 border border-stone-850 text-stone-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-600"
+                    placeholder="Họ và Tên của bạn"
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="block text-xs font-semibold uppercase text-stone-400 tracking-wider">Số điện thoại</label>
+                  <label className="block text-xs font-bold uppercase text-stone-400">Địa chỉ Email</label>
                   <input
-                    type="tel"
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
                     required
-                    className="w-full bg-stone-950 border border-stone-800 focus:border-amber-700 text-stone-200 rounded-xl px-4 py-3 text-sm focus:outline-none transition-colors"
-                    placeholder="0901234567"
+                    className="w-full bg-stone-950 border border-stone-850 text-stone-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-600"
+                    placeholder="name@example.com"
                   />
                 </div>
               </div>
 
               <div className="space-y-2">
-                <label className="block text-xs font-semibold uppercase text-stone-400 tracking-wider">Địa chỉ Email</label>
+                <label className="block text-xs font-bold uppercase text-stone-400">Chủ đề</label>
                 <input
-                  type="email"
+                  type="text"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleInputChange}
                   required
-                  className="w-full bg-stone-950 border border-stone-800 focus:border-amber-700 text-stone-200 rounded-xl px-4 py-3 text-sm focus:outline-none transition-colors"
-                  placeholder="example@gmail.com"
+                  className="w-full bg-stone-950 border border-stone-850 text-stone-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-600"
+                  placeholder="Góp ý sản phẩm, liên hệ đối tác..."
                 />
               </div>
 
               <div className="space-y-2">
-                <label className="block text-xs font-semibold uppercase text-stone-400 tracking-wider">Nội dung tin nhắn</label>
+                <label className="block text-xs font-bold uppercase text-stone-400">Lời nhắn / Nội dung</label>
                 <textarea
-                  rows="4"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
                   required
-                  className="w-full bg-stone-950 border border-stone-800 focus:border-amber-700 text-stone-200 rounded-xl px-4 py-3 text-sm focus:outline-none transition-colors resize-none"
-                  placeholder="Tôi muốn tìm hiểu thêm về khóa học pha chế / đặt mua sỉ..."
-                ></textarea>
+                  rows={4}
+                  className="w-full bg-stone-950 border border-stone-850 text-stone-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-600 resize-none"
+                  placeholder="Nội dung lời nhắn của bạn..."
+                />
               </div>
 
               <button
                 type="submit"
-                className="w-full py-4 bg-amber-600 hover:bg-amber-500 active:scale-99 text-stone-950 font-bold rounded-xl transition-all shadow-lg"
+                disabled={loading}
+                className="w-full py-3.5 bg-amber-600 hover:bg-amber-500 disabled:opacity-50 text-stone-950 font-bold rounded-xl transition-all shadow-lg flex items-center justify-center gap-2 active:scale-99"
               >
-                Gửi Lời Nhắn
+                {loading ? 'Đang gửi...' : (
+                  <>
+                    <Send className="h-4 w-4" />
+                    Gửi Lời Nhắn
+                  </>
+                )}
               </button>
             </form>
           </div>
