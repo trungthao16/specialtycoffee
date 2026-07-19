@@ -66,7 +66,7 @@ export default async function BlogPage() {
         <div className="border-b border-stone-900 pb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div className="space-y-2">
             <Breadcrumbs items={breadcrumbItems} />
-            <h1 className="text-4xl font-serif font-black text-stone-100">Blog Cà Phê</h1>
+            <h1 className="text-4xl font-sans font-black text-stone-100">Blog Cà Phê</h1>
             <p className="text-stone-400 text-sm">Nơi chia sẻ kiến thức, mẹo pha chế và câu chuyện xoay quanh hạt cà phê đặc sản.</p>
           </div>
           <Link

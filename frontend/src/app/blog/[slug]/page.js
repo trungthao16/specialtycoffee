@@ -119,7 +119,7 @@ export default async function BlogPostPage({ params }) {
             <div className="flex items-center gap-4 text-xs text-amber-600 font-semibold uppercase tracking-wider">
               <span>{post.category?.name || 'Kiến Thức'}</span>
             </div>
-            <h1 className="text-3xl md:text-5xl font-serif font-black text-stone-100 leading-tight">
+            <h1 className="text-3xl md:text-5xl font-sans font-black text-stone-100 leading-tight">
               {post.title}
             </h1>
 

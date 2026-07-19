@@ -26,7 +26,7 @@ export default function AboutPage() {
           <span className="px-3 py-1 bg-amber-600/10 text-amber-500 rounded-full text-xs font-bold uppercase tracking-wider border border-amber-600/20">
             Câu chuyện của chúng tôi
           </span>
-          <h1 className="text-4xl md:text-6xl font-serif font-black text-stone-100 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-sans font-black text-stone-100 leading-tight">
             Nơi Khởi Nguồn Đam Mê <br />
             <span className="text-amber-500">Cà Phê Specialty</span>
           </h1>
@@ -38,7 +38,7 @@ export default function AboutPage() {
         {/* Narrative / History */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center pt-6 border-t border-stone-900">
           <div className="space-y-6">
-            <h2 className="text-2xl md:text-3xl font-serif font-bold text-stone-100">
+            <h2 className="text-2xl md:text-3xl font-sans font-bold text-stone-100">
               Hành Trình Kiến Tạo Hương Vị Bản Nguyên
             </h2>
             <p className="leading-relaxed">
@@ -54,7 +54,7 @@ export default function AboutPage() {
                 <ShieldCheck className="h-6 w-6" />
               </div>
               <div>
-                <h4 className="text-stone-100 font-bold font-serif mb-1">100% Specialty Grade</h4>
+                <h4 className="text-stone-100 font-bold font-sans mb-1">100% Specialty Grade</h4>
                 <p className="text-sm text-stone-400">Được chấm điểm thử nếm (Cup Score) đạt từ 80 điểm trở lên theo tiêu chuẩn khắt khe của Hiệp hội Cà phê Đặc sản Quốc tế (SCA).</p>
               </div>
             </div>
@@ -63,7 +63,7 @@ export default function AboutPage() {
                 <Heart className="h-6 w-6" />
               </div>
               <div>
-                <h4 className="text-stone-100 font-bold font-serif mb-1">Rang Mộc Thủ Công</h4>
+                <h4 className="text-stone-100 font-bold font-sans mb-1">Rang Mộc Thủ Công</h4>
                 <p className="text-sm text-stone-400">Tuyệt đối không pha trộn, không sử dụng phụ gia hóa chất tạo hương hay bơ tạo béo.</p>
               </div>
             </div>
@@ -72,25 +72,25 @@ export default function AboutPage() {
 
         {/* Core Values */}
         <div className="pt-12 border-t border-stone-900 space-y-8">
-          <h2 className="text-3xl font-serif font-bold text-stone-100 text-center">Giá Trị Cốt Lõi</h2>
+          <h2 className="text-3xl font-sans font-bold text-stone-100 text-center">Giá Trị Cốt Lõi</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             <div className="p-6 bg-stone-900/30 border border-stone-900 rounded-2xl space-y-3">
               <Award className="h-8 w-8 text-amber-500" />
-              <h3 className="text-lg font-serif font-bold text-stone-100">Chất Lượng</h3>
+              <h3 className="text-lg font-sans font-bold text-stone-100">Chất Lượng</h3>
               <p className="text-sm text-stone-400 leading-relaxed">
                 Chúng tôi không bao giờ thỏa hiệp với chất lượng sản phẩm. Từng mẻ rang đều được ghi chép hồ sơ và kiểm định hương vị (Cupping) cẩn thận trước khi đóng gói.
               </p>
             </div>
             <div className="p-6 bg-stone-900/30 border border-stone-900 rounded-2xl space-y-3">
               <Sparkles className="h-8 w-8 text-amber-500" />
-              <h3 className="text-lg font-serif font-bold text-stone-100">Trải Nghiệm</h3>
+              <h3 className="text-lg font-sans font-bold text-stone-100">Trải Nghiệm</h3>
               <p className="text-sm text-stone-400 leading-relaxed">
                 Chúng tôi mong muốn đồng hành và hướng dẫn bạn tự pha chế những tách cà phê thơm ngon nhất tại nhà thông qua các bài viết hướng dẫn pha chế chi tiết.
               </p>
             </div>
             <div className="p-6 bg-stone-900/30 border border-stone-900 rounded-2xl space-y-3">
               <Heart className="h-8 w-8 text-amber-500" />
-              <h3 className="text-lg font-serif font-bold text-stone-100">Bền Vững</h3>
+              <h3 className="text-lg font-sans font-bold text-stone-100">Bền Vững</h3>
               <p className="text-sm text-stone-400 leading-relaxed">
                 Hỗ trợ phương thức canh tác hữu cơ, thu mua nông sản trực tiếp từ nông trại (Direct Trade) giúp nâng cao đời sống cho người nông dân trồng cà phê Việt.
               </p>
@@ -100,7 +100,7 @@ export default function AboutPage() {
 
         {/* Call to Action */}
         <div className="bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-stone-900 via-stone-950 to-stone-950 border border-amber-900/10 rounded-3xl p-12 text-center space-y-6 shadow-2xl">
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-stone-100">Hãy Trải Nghiệm Cà Phê Bản Nguyên Ngay Hôm Nay</h2>
+          <h2 className="text-2xl md:text-3xl font-sans font-bold text-stone-100">Hãy Trải Nghiệm Cà Phê Bản Nguyên Ngay Hôm Nay</h2>
           <p className="max-w-xl mx-auto text-sm text-stone-400">
             Khám phá những dòng hạt Single Origin chất lượng cao hoặc các hỗn hợp rang mộc đằm thắm của chúng tôi.
           </p>

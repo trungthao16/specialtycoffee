@@ -66,7 +66,7 @@ export default async function ProductsPage() {
         <div className="border-b border-stone-900 pb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div className="space-y-2">
             <Breadcrumbs items={breadcrumbItems} />
-            <h1 className="text-4xl font-serif font-black text-stone-100">Sản Phẩm Cà Phê</h1>
+            <h1 className="text-4xl font-sans font-black text-stone-100">Sản Phẩm Cà Phê</h1>
             <p className="text-stone-400 text-sm">Lọc theo hạt cà phê và mức độ rang phù hợp với sở thích của bạn.</p>
           </div>
           <Link

@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Coffee className="h-6 w-6 text-amber-500" />
-              <span className="font-serif text-xl font-bold tracking-wider text-amber-500">
+              <span className="font-sans text-xl font-bold tracking-wider text-amber-500">
                 SPECIALTY COFFEE
               </span>
             </div>

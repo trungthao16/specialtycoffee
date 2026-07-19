@@ -136,7 +136,7 @@ export default function AddProductPage() {
           <span className="text-xs text-amber-500 font-bold uppercase tracking-widest bg-amber-700/10 px-4 py-1.5 rounded-full border border-amber-700/20">
             Catalog Studio
           </span>
-          <h1 className="text-3xl md:text-5xl font-serif font-black text-stone-100 mt-2">Đăng Sản Phẩm Mới</h1>
+          <h1 className="text-3xl md:text-5xl font-sans font-black text-stone-100 mt-2">Đăng Sản Phẩm Mới</h1>
           <p className="text-stone-400 text-sm mt-1">
             Nhập chi tiết cà phê hạt, mức độ rang và giá cả để hiển thị trên cửa hàng.
           </p>

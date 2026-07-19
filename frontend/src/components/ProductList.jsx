@@ -87,7 +87,7 @@ export default function ProductList({ initialProducts }) {
       ) : (
         <div className="text-center py-20 bg-stone-900/20 border border-dashed border-stone-800 rounded-2xl">
           <Filter className="h-10 w-10 text-stone-600 mx-auto mb-4" />
-          <h3 className="text-lg font-serif font-semibold text-stone-300">Không tìm thấy sản phẩm</h3>
+          <h3 className="text-lg font-sans font-semibold text-stone-300">Không tìm thấy sản phẩm</h3>
           <p className="text-sm text-stone-500 mt-2">Hãy thử thay đổi tiêu chí tìm kiếm của bạn.</p>
         </div>
       )}

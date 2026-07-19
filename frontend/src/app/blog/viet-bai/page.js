@@ -132,7 +132,7 @@ export default function WritePostPage() {
           <span className="text-xs text-amber-500 font-bold uppercase tracking-widest bg-amber-700/10 px-4 py-1.5 rounded-full border border-amber-700/20">
             Publisher Studio
           </span>
-          <h1 className="text-3xl md:text-5xl font-serif font-black text-stone-100 mt-2">Viết Bài Mới</h1>
+          <h1 className="text-3xl md:text-5xl font-sans font-black text-stone-100 mt-2">Viết Bài Mới</h1>
           <p className="text-stone-400 text-sm mt-1">
             Soạn thảo bài viết chia sẻ kiến thức, kinh nghiệm pha chế của bạn.
           </p>

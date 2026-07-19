@@ -42,7 +42,7 @@ export default function ContactPage() {
 
         {/* Title */}
         <div className="text-center space-y-2">
-          <h1 className="text-4xl font-serif font-black text-stone-100">Liên Hệ Với Chúng Tôi</h1>
+          <h1 className="text-4xl font-sans font-black text-stone-100">Liên Hệ Với Chúng Tôi</h1>
           <p className="text-stone-400 text-sm max-w-md mx-auto">
             Mọi ý kiến đóng góp, phản hồi hoặc yêu cầu tư vấn hợp tác đại lý, vui lòng liên hệ theo biểu mẫu dưới đây.
           </p>
@@ -52,7 +52,7 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pt-4">
           {/* Info Side (4 cols) */}
           <div className="md:col-span-4 space-y-6">
-            <h3 className="text-xl font-serif font-bold text-stone-100 border-b border-stone-900 pb-3">Thông Tin Liên Hệ</h3>
+            <h3 className="text-xl font-sans font-bold text-stone-100 border-b border-stone-900 pb-3">Thông Tin Liên Hệ</h3>
             
             <div className="space-y-4 text-sm">
               <div className="flex gap-3">
@@ -91,7 +91,7 @@ export default function ContactPage() {
 
           {/* Form Side (8 cols) */}
           <div className="md:col-span-8 bg-stone-900/30 border border-stone-900 p-8 rounded-3xl space-y-6 shadow-xl">
-            <h3 className="text-xl font-serif font-bold text-stone-100 border-b border-stone-900 pb-3">Gửi Lời Nhắn Trực Tuyến</h3>
+            <h3 className="text-xl font-sans font-bold text-stone-100 border-b border-stone-900 pb-3">Gửi Lời Nhắn Trực Tuyến</h3>
 
             {status.message && (
               <div

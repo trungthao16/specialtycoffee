@@ -27,7 +27,7 @@ export default function Header() {
               <div className="p-2.5 bg-amber-700/20 text-amber-500 rounded-xl group-hover:bg-amber-600 group-hover:text-stone-900 transition-all duration-300">
                 <Coffee className="h-6 w-6" />
               </div>
-              <span className="font-serif text-2xl font-bold tracking-wider text-amber-500 group-hover:text-amber-400 transition-colors">
+              <span className="font-sans text-2xl font-bold tracking-wider text-amber-500 group-hover:text-amber-400 transition-colors">
                 SPECIALTY COFFEE
               </span>
             </Link>

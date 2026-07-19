@@ -149,7 +149,7 @@ export default async function ProductDetailPage({ params }) {
                 </div>
 
                 {/* Title */}
-                <h1 className="text-3xl md:text-5xl font-serif font-black text-stone-100 leading-tight">
+                <h1 className="text-3xl md:text-5xl font-sans font-black text-stone-100 leading-tight">
                   {product.name}
                 </h1>
 

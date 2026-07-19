@@ -41,7 +41,7 @@ export default function ProductCard({ product }) {
           </span>
           {/* Title */}
           <Link href={`/products/${product.slug}`}>
-            <h3 className="mt-2 text-lg font-serif font-bold text-stone-100 group-hover:text-amber-500 transition-colors line-clamp-1">
+            <h3 className="mt-2 text-lg font-sans font-bold text-stone-100 group-hover:text-amber-500 transition-colors line-clamp-1">
               {product.name}
             </h3>
           </Link>
