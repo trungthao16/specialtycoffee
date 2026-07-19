@@ -219,7 +219,7 @@ export const mockPosts = [
         <li>Xay mịn (Fine): Phù hợp hoàn hảo cho pha phin truyền thống và máy pha Espresso chuyên nghiệp.</li>
       </ol>
     `,
-    coverImage: 'https://images.unsplash.com/photo-1510972527409-cef1903972fa?auto=format&fit=crop&q=80&w=800',
+    coverImage: 'https://images.unsplash.com/photo-1570968915860-54d5c301fc9f?auto=format&fit=crop&q=80&w=800',
     author: 'Nguyễn Specialty',
     category: mockCategories[2],
     isPublished: true,
