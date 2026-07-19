@@ -15,6 +15,8 @@ dotenv.config();
 
 const app = express();
 
+app.set('trust proxy', true);
+
 // Middleware
 app.use(cors());
 app.use(express.json({ limit: '10mb' }));
@@ -49,8 +51,8 @@ app.post('/api/upload', async (req, res) => {
     
     fs.writeFileSync(filePath, fileBuffer);
     
-    const backendUrl = process.env.BACKEND_URL || `http://localhost:${process.env.PORT || 5000}`;
-    const fileUrl = `${backendUrl}/uploads/${cleanFilename}`;
+    const protocol = req.headers['x-forwarded-proto'] || req.protocol;
+    const fileUrl = `${protocol}://${req.get('host')}/uploads/${cleanFilename}`;
     
     return res.json({ url: fileUrl });
   } catch (error) {
