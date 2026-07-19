@@ -293,8 +293,8 @@ app.get('/api/seo', async (req, res) => {
   return res.json({
     path: path || '/',
     title: 'Specialty Coffee Space - Cà Phê Specialty Thượng Hạng',
-    description: 'Cửa hàng cà phê specialty tinh khiết. Trải nghiệm hương vị bản nguyên.',
-    keywords: 'cà phê, specialty coffee, arabica, robusta',
+    description: 'Cửa hàng cung cấp cà phê Specialty hạt thượng hạng tuyển chọn từ Ethiopia, Kenya, Colombia và Robusta Honey Gia Lai rang xay mộc thủ công bản nguyên thanh khiết.',
+    keywords: 'cà phê specialty, specialty coffee space, hạt arabica, hạt robusta, rang mộc',
   });
 });
 
