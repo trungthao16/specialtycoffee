@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Specialty Coffee Space - Cà Phê Specialty Thượng Hạng",
-  description: "Cửa hàng cà phê specialty tinh khiết. Trải nghiệm hương vị bản nguyên từ Ethiopia, Kenya, Robusta Honey Gia Lai rang xay thủ công.",
+  description: "Specialty coffee hạt đặc sản tinh khiết từ các vùng trồng Ethiopia, Kenya, Colombia và Robusta Honey Gia Lai rang mộc thủ công thượng hạng tại Specialty Coffee Space.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://specialtycoffee-five.vercel.app'),
 };
 

@@ -29,7 +29,7 @@ async function getSEO() {
   }
   return {
     title: 'Specialty Coffee Space - Cà Phê Specialty Thượng Hạng',
-    description: 'Cửa hàng cung cấp cà phê Specialty hạt thượng hạng tuyển chọn từ Ethiopia, Kenya, Colombia và Robusta Honey Gia Lai rang xay mộc thủ công bản nguyên thanh khiết.',
+    description: 'Specialty coffee hạt đặc sản thượng hạng tuyển chọn từ Ethiopia, Kenya, Colombia và Robusta Honey Gia Lai rang xay mộc bản nguyên thanh khiết tại Specialty Coffee Space.',
     keywords: 'cà phê specialty, specialty coffee space, hạt arabica, hạt robusta, rang mộc',
   };
 }
@@ -104,8 +104,8 @@ export default async function Home() {
               Specialty Coffee Space
             </span>
             <h1 className="text-5xl md:text-7xl font-sans font-black tracking-tight text-stone-100 leading-tight">
-              Hương Vị Cà Phê <br />
-              <span className="text-amber-500">Bản Nguyên</span>
+              Specialty Coffee <br />
+              <span className="text-amber-500">Hương Vị Bản Nguyên</span>
             </h1>
             <p className="text-stone-400 text-base md:text-lg leading-relaxed max-w-xl mx-auto font-sans">
               Khám phá hạt cà phê Specialty được tuyển chọn kỹ lưỡng từ những vùng trồng trứ danh, rang mộc thủ công nhằm giữ trọn đặc trưng thổ nhưỡng.
