@@ -107,7 +107,7 @@ export default async function BlogPage() {
                   </div>
 
                   <Link href={`/blog/${post.slug}`}>
-                    <h2 className="text-xl font-serif font-bold text-stone-100 group-hover:text-amber-500 transition-colors line-clamp-2">
+                    <h2 className="text-xl font-sans font-bold text-stone-100 group-hover:text-amber-500 transition-colors line-clamp-2">
                       {post.title}
                     </h2>
                   </Link>
