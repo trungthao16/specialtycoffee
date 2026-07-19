@@ -69,12 +69,14 @@ export default async function BlogPage() {
             <h1 className="text-4xl font-sans font-black text-stone-100">Blog Cà Phê</h1>
             <p className="text-stone-400 text-sm">Nơi chia sẻ kiến thức, mẹo pha chế và câu chuyện xoay quanh hạt cà phê đặc sản.</p>
           </div>
+          {/* 
           <Link
             href="/blog/viet-bai"
             className="px-5 py-3 bg-amber-600 hover:bg-amber-500 text-stone-950 font-bold rounded-xl text-sm transition-all shadow-md shrink-0 text-center active:scale-97"
           >
             Đăng Bài Viết Mới
           </Link>
+          */}
         </div>
 
         {/* Posts Grid */}

@@ -69,12 +69,14 @@ export default async function ProductsPage() {
             <h1 className="text-4xl font-sans font-black text-stone-100">Sản Phẩm Cà Phê</h1>
             <p className="text-stone-400 text-sm">Lọc theo hạt cà phê và mức độ rang phù hợp với sở thích của bạn.</p>
           </div>
+          {/* 
           <Link
             href="/san-pham/them-moi"
             className="px-5 py-3 bg-amber-600 hover:bg-amber-500 text-stone-950 font-bold rounded-xl text-sm transition-all shadow-md shrink-0 text-center active:scale-97"
           >
             Đăng Sản Phẩm Mới
           </Link>
+          */}
         </div>
 
         {/* Product catalog with filters */}
