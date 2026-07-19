@@ -106,7 +106,7 @@ export const mockPosts = [
       <p><strong>Lời khuyên hữu ích:</strong> Hãy thưởng thức tách cà phê Pour Over khi nhiệt độ giảm xuống khoảng 60°C để cảm nhận rõ nhất vị chua ngọt trái cây đa dạng của hạt Single Origin.</p>
     `,
     coverImage: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&q=80&w=800',
-    author: 'Nguyễn Specialty',
+    author: 'trungthao',
     category: mockCategories[2],
     isPublished: true,
     createdAt: '2026-07-19T06:00:00Z',
@@ -138,7 +138,7 @@ export const mockPosts = [
       <p><strong>Lời khuyên từ chuyên gia:</strong> Robusta Honey Gia Lai phối trộn cùng 30% Arabica Cầu Đất sẽ tạo ra tách Espresso cực kỳ cân bằng và thơm quyến rũ.</p>
     `,
     coverImage: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=800',
-    author: 'Trần PourOver',
+    author: 'kỳ anh',
     category: mockCategories[2],
     isPublished: true,
     createdAt: '2026-07-19T05:30:00Z',
@@ -164,7 +164,7 @@ export const mockPosts = [
       <p>Để đánh giá đầy đủ các nốt hương vị phong phú của hạt Single Origin, hãy uống cà phê nguyên chất **không đường và không sữa**. Sử dụng các phương pháp pha giấy lọc như V60 hoặc Kalita Wave để giữ cho tách cà phê có màu hổ phách trong trẻo và hương thơm lan tỏa tự nhiên nhất.</p>
     `,
     coverImage: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=800',
-    author: 'Nguyễn Specialty',
+    author: 'trungthao',
     category: mockCategories[2],
     isPublished: true,
     createdAt: '2026-07-19T05:00:00Z',
@@ -190,7 +190,7 @@ export const mockPosts = [
       <p>Nếu bạn thích một tách cà phê thanh nhẹ, thơm nồng và chua dịu trái cây, hạt Arabica là lựa chọn lý tưởng. Ngược lại, nếu bạn là tín đồ của gu cà phê truyền thống đậm đà, đắng đậm và thích kết hợp sữa đặc béo ngậy, Robusta chính là chân ái của bạn.</p>
     `,
     coverImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=800',
-    author: 'Trần PourOver',
+    author: 'kỳ anh',
     category: mockCategories[2],
     isPublished: true,
     createdAt: '2026-07-19T04:30:00Z',
@@ -220,7 +220,7 @@ export const mockPosts = [
       </ol>
     `,
     coverImage: 'https://images.unsplash.com/photo-1570968915860-54d5c301fc9f?auto=format&fit=crop&q=80&w=800',
-    author: 'Nguyễn Specialty',
+    author: 'trungthao',
     category: mockCategories[2],
     isPublished: true,
     createdAt: '2026-07-19T04:00:00Z',
@@ -246,7 +246,7 @@ export const mockPosts = [
       <p>Nước cốt Cold Brew sau khi lọc bã có thể bảo quản kín trong tủ lạnh dùng dần trong vòng 7 - 10 ngày. Bạn có thể thưởng thức nguyên chất, kết hợp với nước tonic mát lạnh hoặc sữa tươi không đường tạo nên thức uống giải khát tuyệt đỉnh ngày hè.</p>
     `,
     coverImage: 'https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=80&w=800',
-    author: 'Trần PourOver',
+    author: 'kỳ anh',
     category: mockCategories[2],
     isPublished: true,
     createdAt: '2026-07-19T03:30:00Z',
@@ -273,7 +273,7 @@ export const mockPosts = [
       <p>Một ly Espresso đạt chuẩn phải có lớp bọt Crema dày ít nhất 2mm, mịn màng và có những vệt vằn hổ hổ phách đặc trưng. Vị cà phê phải cân bằng ngọt đắng và chua dịu, không bị đắng chát khó chịu ở hậu vị.</p>
     `,
     coverImage: 'https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=80&w=800',
-    author: 'Nguyễn Specialty',
+    author: 'trungthao',
     category: mockCategories[2],
     isPublished: true,
     createdAt: '2026-07-19T03:00:00Z',
@@ -299,7 +299,7 @@ export const mockPosts = [
       <p>Để tránh các tác dụng phụ tiêu cực như mất ngủ hay nhịp tim nhanh, người trưởng thành khỏe mạnh chỉ nên tiêu thụ tối đa 400mg caffeine mỗi ngày (tương đương khoảng 3 - 4 tách cà phê phin hoặc Espresso). Nên uống cà phê trước 3 giờ chiều để không ảnh hưởng đến giấc ngủ ban đêm.</p>
     `,
     coverImage: 'https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&q=80&w=800',
-    author: 'Trần PourOver',
+    author: 'kỳ anh',
     category: mockCategories[2],
     isPublished: true,
     createdAt: '2026-07-19T02:30:00Z',
@@ -325,7 +325,7 @@ export const mockPosts = [
       <p>Để hạt cà phê Natural không bị ẩm mốc hay lên men quá đà hỏng hương vị, Barista và nông dân phải đảo quả cà phê liên tục 30 phút một lần trên giàn phơi dưới ánh nắng mặt trời và che chắn cẩn thận vào ban đêm tránh sương muối.</p>
     `,
     coverImage: 'https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&q=80&w=800',
-    author: 'Nguyễn Specialty',
+    author: 'trungthao',
     category: mockCategories[2],
     isPublished: true,
     createdAt: '2026-07-19T02:00:00Z',
@@ -351,7 +351,7 @@ export const mockPosts = [
       <p>Cách duy nhất để tiến bộ là hãy ghi lại tỷ lệ hạt xay, nhiệt độ và thời gian pha chế mỗi ngày để tự cân chỉnh và tìm ra hương vị hoàn hảo nhất phù hợp gu của bạn.</p>
     `,
     coverImage: 'https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&q=80&w=800',
-    author: 'Trần PourOver',
+    author: 'kỳ anh',
     category: mockCategories[2],
     isPublished: true,
     createdAt: '2026-07-19T01:30:00Z',
