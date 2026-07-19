@@ -92,7 +92,7 @@ export const mockPosts = [
         <li><strong>Phễu lọc Hario V60</strong> bằng sứ hoặc nhựa chịu nhiệt chất lượng cao.</li>
         <li>Giấy lọc Hario V60 tương ứng loại xịn đã được tráng nước sôi để khử mùi giấy.</li>
         <li>Ấm rót nước chuyên dụng cổ ngỗng giúp kiểm soát dòng nước chảy đều đặn.</li>
-        <li>Hạt cà phê Specialty chất lượng cao (ưu tiên dòng Arabica sơ chế ướt hoặc honey).</li>
+        <li>Hạt cà phê Specialty chất lượng cao như <a href="/products/ethiopia-yirgacheffe-kochere" class="text-amber-500 hover:underline">Ethiopia Yirgacheffe Kochere</a> (dòng Arabica sơ chế ướt tuyệt hảo).</li>
         <li>Cân điện tử đo gram chính xác kèm bộ đếm thời gian pha chế.</li>
       </ul>
 
@@ -103,7 +103,7 @@ export const mockPosts = [
         <li><strong>Bước 2: Rót nước lần thứ nhất:</strong> Rót từ từ thêm 100g nước nóng theo vòng tròn đồng tâm từ trong ra ngoài để hòa quyện bột cà phê. Chờ dòng chảy rút bớt.</li>
         <li><strong>Bước 3: Rót nước lần cuối:</strong> Rót nốt 80g nước nóng còn lại vào trung tâm phễu lọc để hoàn tất quy trình chiết xuất tách cà phê hoàn hảo.</li>
       </ol>
-      <p><strong>Lời khuyên hữu ích:</strong> Hãy thưởng thức tách cà phê Pour Over khi nhiệt độ giảm xuống khoảng 60°C để cảm nhận rõ nhất vị chua ngọt trái cây đa dạng của hạt Single Origin.</p>
+      <p><strong>Lời khuyên hữu ích:</strong> Hãy thưởng thức tách cà phê Pour Over khi nhiệt độ giảm xuống khoảng 60°C để cảm nhận rõ nhất vị chua ngọt trái cây đa dạng của hạt Single Origin. Để tránh những sai sót kỹ thuật, bạn nên tìm hiểu kỹ bài viết về <a href="/blog/5-loi-thuong-gap-khi-pha-ca-phe-bang-pheu-loc-v60" class="text-amber-500 hover:underline">5 lỗi thường gặp khi pha cà phê bằng phễu lọc V60</a>.</p>
     `,
     coverImage: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&q=80&w=800',
     author: 'trungthao',
@@ -121,7 +121,7 @@ export const mockPosts = [
       <p>Cà phê hạt <strong>Robusta Honey Gia Lai</strong> là sản phẩm đột phá đại diện cho hạt cà phê chất lượng cao của Việt Nam. Khác với phương pháp sơ chế khô thông thường, chế biến mật ong (Honey Process) giữ lại một phần lớp chất nhầy ngọt bao quanh hạt thóc trong quá trình phơi phóng, tạo ra <em>vị ngọt sâu chocolate, caramel béo ngậy và giảm độ đắng gắt truyền thống</em>.</p>
       
       <h2>Lợi ích tuyệt vời của quy trình sơ chế Honey đối với hạt Robusta</h2>
-      <p>Nhờ lượng đường tự nhiên được thẩm thấu sâu trong quá trình lên men tự nhiên, Robusta Honey sở hữu độ ngọt đậm đà vượt trội cùng body dày dặn thích hợp cho cả pha phin lẫn Espresso.</p>
+      <p>Nhờ lượng đường tự nhiên được thẩm thấu sâu trong quá trình lên men tự nhiên, hạt <a href="/products/robusta-honey-gia-lai" class="text-amber-500 hover:underline">Robusta Honey Gia Lai</a> sở hữu độ ngọt đậm đà vượt trội cùng body dày dặn thích hợp cho cả pha phin lẫn Espresso.</p>
       <ul>
         <li><strong>Độ chua:</strong> Chua nhẹ tự nhiên, mượt mà tinh tế.</li>
         <li><strong>Hương thơm:</strong> Mùi hạt dẻ rang cháy, sô-cô-la đen hòa quyện mật ong rừng.</li>
@@ -135,7 +135,7 @@ export const mockPosts = [
         <li>Hạt rang đồng đều màu sắc trung bình hoặc rang đậm vừa (Medium/Medium-Dark), không bị vụn vỡ hay lẫn nhiều tạp chất.</li>
         <li>Bao bì đóng gói có van một chiều thoát khí CO2 bảo vệ hạt cà phê khỏi oxy hóa mất mùi.</li>
       </ol>
-      <p><strong>Lời khuyên từ chuyên gia:</strong> Robusta Honey Gia Lai phối trộn cùng 30% Arabica Cầu Đất sẽ tạo ra tách Espresso cực kỳ cân bằng và thơm quyến rũ.</p>
+      <p><strong>Lời khuyên từ chuyên gia:</strong> Robusta Honey Gia Lai phối trộn cùng 30% Arabica Cầu Đất sẽ tạo ra tách Espresso cực kỳ cân bằng. Bạn cũng nên xem thêm bài viết về <a href="/blog/so-sanh-ca-phe-arabica-va-robusta-khac-biet-huong-vi" class="text-amber-500 hover:underline">so sánh cà phê Arabica và Robusta</a> để có công thức phối trộn hoàn hảo nhất.</p>
     `,
     coverImage: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=800',
     author: 'kỳ anh',
