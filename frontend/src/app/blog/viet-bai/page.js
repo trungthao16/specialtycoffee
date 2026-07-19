@@ -41,47 +41,22 @@ export default function WritePostPage() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleFileUpload = async (e) => {
+  const handleFileUpload = (e) => {
     const file = e.target.files[0];
     if (!file) return;
 
-    // Check size limit (max 2MB to prevent Render Free Tier OOM crash)
+    // Check size limit (max 2MB to prevent large memory usage)
     if (file.size > 2 * 1024 * 1024) {
-      setStatus({ type: 'error', message: 'Kích thước ảnh quá lớn (Tối đa 2MB). Vui lòng chọn ảnh nhỏ hơn để tránh quá tải máy chủ.' });
+      setStatus({ type: 'error', message: 'Kích thước ảnh quá lớn (Tối đa 2MB). Vui lòng chọn ảnh nhỏ hơn.' });
       return;
     }
 
-    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
-    setLoading(true);
     setStatus({ type: null, message: '' });
 
     const reader = new FileReader();
-    reader.onloadend = async () => {
-      try {
-        const res = await fetch(`${API_URL}/api/upload`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            file: reader.result,
-            filename: file.name,
-          }),
-        });
-
-        const data = await res.json();
-        if (res.ok) {
-          setFormData((prev) => ({ ...prev, coverImage: data.url }));
-          setStatus({ type: 'success', message: 'Tải ảnh lên thành công!' });
-        } else {
-          setStatus({ type: 'error', message: data.message || 'Lỗi khi tải ảnh lên.' });
-        }
-      } catch (err) {
-        console.error(err);
-        setStatus({ type: 'error', message: 'Không thể kết nối API tải ảnh.' });
-      } finally {
-        setLoading(false);
-      }
+    reader.onloadend = () => {
+      setFormData((prev) => ({ ...prev, coverImage: reader.result }));
+      setStatus({ type: 'success', message: 'Tải ảnh lên thành công (Dưới dạng dữ liệu chuỗi Base64)!' });
     };
     reader.readAsDataURL(file);
   };
