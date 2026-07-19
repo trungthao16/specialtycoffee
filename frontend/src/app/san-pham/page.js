@@ -2,6 +2,8 @@ import ProductList from '@/components/ProductList';
 import Link from 'next/link';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
+export const dynamic = 'force-dynamic';
+
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
 
 async function getProducts() {

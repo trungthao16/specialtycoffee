@@ -1,6 +1,8 @@
 import ProductCard from '@/components/ProductCard';
 import Link from 'next/link';
 
+export const dynamic = 'force-dynamic';
+
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
 
 async function getFeaturedProducts() {
