@@ -74,10 +74,12 @@ connectDB()
 // Helper to dynamically correct legacy localhost upload links to match current request host
 const fixImageUrl = (url, req) => {
   if (!url) return url;
-  if (url.includes('localhost:5000')) {
+  if (url.includes('localhost:') || url.includes('127.0.0.1:')) {
     const protocol = req.headers['x-forwarded-proto'] || req.protocol;
     const baseUrl = `${protocol}://${req.get('host')}`;
-    return url.replace(/http:\/\/localhost:5000/g, baseUrl);
+    return url
+      .replace(/http:\/\/localhost:\d+/g, baseUrl)
+      .replace(/http:\/\/127\.0\.0\.1:\d+/g, baseUrl);
   }
   return url;
 };
