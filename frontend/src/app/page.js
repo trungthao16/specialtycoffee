@@ -147,11 +147,11 @@ export default async function Home() {
         )}
 
         {/* SEO Rich Text Content Section */}
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-stone-900 pt-16 space-y-8 text-stone-300 font-sans">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-stone-900 pt-16 space-y-10 text-stone-300 font-sans pb-16">
           <div className="space-y-4">
             <h2 className="text-3xl font-serif font-bold text-stone-100 text-center">Specialty Coffee Space - Định Nghĩa Trải Nghiệm Cà Phê Bản Nguyên</h2>
             <p className="leading-relaxed text-stone-400">
-              Chào mừng bạn đến với <strong>Specialty Coffee Space</strong>, không gian dành riêng cho những tín đồ yêu thích hương vị thuần khiết và tinh tế nhất của cà phê đặc sản. Chúng tôi tự hào mang đến những hạt cà phê đạt tiêu chuẩn Specialty thượng hạng, được thu hoạch thủ công tại các nông hộ và vùng trồng trứ danh trên toàn thế giới cũng như tại các cao nguyên Việt Nam.
+              Chào mừng bạn đến với <strong>Specialty Coffee Space</strong>, không gian dành riêng cho những tín đồ yêu thích hương vị thuần khiết và tinh tế nhất của cà phê đặc sản. Chúng tôi tự hào mang đến những hạt cà phê đạt tiêu chuẩn Specialty thượng hạng, được thu hoạch thủ công tại các nông hộ và vùng trồng trứ danh trên toàn thế giới cũng như tại các cao nguyên Việt Nam. Chúng tôi tin rằng mỗi ly cà phê không chỉ đơn giản là thức uống tiếp năng lượng, mà còn là một câu chuyện dài về nguồn cội đất đai và niềm đam mê trọn vẹn của những người làm nghề.
             </p>
           </div>
 
@@ -159,21 +159,36 @@ export default async function Home() {
             <div className="space-y-3">
               <h3 className="text-xl font-serif font-bold text-amber-500">Nguồn Gốc Tuyển Chọn</h3>
               <p className="text-sm leading-relaxed text-stone-400">
-                Mỗi hạt cà phê tại Specialty Coffee Space đều có một câu chuyện nguồn gốc rõ ràng (Single Origin). Từ vùng đất <strong>Ethiopia Yirgacheffe</strong> thanh tao với hương hoa nhài và vị chua sáng của chanh vàng, đến vùng đất <strong>Kenya Nyeri</strong> đậm đà quả mọng ngọt lịm. Bên cạnh đó, giống hạt Robusta Honey từ Gia Lai cũng được chúng tôi lựa chọn kỹ lưỡng, mang lại trải nghiệm đậm đà ngọt hậu khó quên.
+                Mỗi hạt cà phê tại Specialty Coffee Space đều có một câu chuyện nguồn gốc rõ ràng (Single Origin). Từ vùng đất <strong>Ethiopia Yirgacheffe</strong> thanh tao với hương hoa nhài và vị chua sáng của chanh vàng, đến vùng đất <strong>Kenya Nyeri</strong> đậm đà quả mọng ngọt lịm. Bên cạnh đó, giống hạt Robusta Honey từ Gia Lai cũng được chúng tôi lựa chọn kỹ lưỡng, mang lại trải nghiệm đậm đà ngọt hậu khó quên. Chúng tôi trực tiếp làm việc với các hợp tác xã địa phương để đảm bảo từng hạt cà phê chín đỏ được thu hoạch đồng đều nhất.
               </p>
             </div>
             <div className="space-y-3">
               <h3 className="text-xl font-serif font-bold text-amber-500">Nghệ Thuật Rang Mộc Thủ Công</h3>
               <p className="text-sm leading-relaxed text-stone-400">
-                Để giữ trọn đặc tính thổ nhưỡng độc bản của từng hạt cà phê, quy trình rang mộc tại xưởng được kiểm soát chặt chẽ bởi các thợ rang lành nghề. Chúng tôi áp dụng mức độ rang nhạt (Light) cho các hạt pha Drip/V60 để giữ độ chua trái cây thanh khiết, và rang vừa (Medium) cho dòng pha phin hoặc Espresso để cân bằng vị ngọt sô-cô-la ấm áp, cam kết nói không với bơ nhân tạo hay hóa chất tạo mùi.
+                Để giữ trọn đặc tính thổ nhưỡng độc bản của từng hạt cà phê, quy trình rang mộc tại xưởng được kiểm soát chặt chẽ bởi các thợ rang lành nghề. Chúng tôi áp dụng mức độ rang nhạt (Light) cho các hạt pha Drip/V60 để giữ độ chua trái cây thanh khiết, và rang vừa (Medium) cho dòng pha phin hoặc Espresso để cân bằng vị ngọt sô-cô-la ấm áp, cam kết nói không với bơ nhân tạo hay hóa chất tạo mùi. Rang mộc giúp hạt giữ nguyên được hương vị tự nhiên quý giá vốn có.
               </p>
             </div>
+          </div>
+
+          {/* Additional text blocks to raise Text/HTML ratio above 15% */}
+          <div className="space-y-4 pt-4 border-t border-stone-900/50">
+            <h3 className="text-xl font-serif font-bold text-stone-100">Tiêu Chuẩn Đánh Giá Cà Phê Đặc Sản (Specialty Coffee Grading)</h3>
+            <p className="text-sm leading-relaxed text-stone-400">
+              Khái niệm cà phê Specialty không phải là một danh xưng tự phong, mà được định nghĩa chính thức bởi Hiệp hội Cà phê Đặc sản Quốc tế (SCA). Chỉ những hạt cà phê nhân xanh đạt điểm số thử nếm (Cup Score) từ 80 điểm trở lên trên thang điểm 100 mới được công nhận là Specialty. Quy trình đánh giá này bao gồm việc chấm điểm nghiêm ngặt các yếu tố: hương thơm khô và ướt (Fragrance/Aroma), hương vị (Flavor), hậu vị (Aftertaste), độ chua (Acidity), thể chất (Body), độ ngọt (Sweetness) và sự đồng đều (Uniformity). Tại Specialty Coffee Space, chúng tôi luôn chọn lọc những lô hàng có điểm số thử nếm tối thiểu từ 84 trở lên để phục vụ quý khách.
+            </p>
+          </div>
+
+          <div className="space-y-4 pt-4 border-t border-stone-900/50">
+            <h3 className="text-xl font-serif font-bold text-stone-100">Hướng Dẫn Bảo Quản Cà Phê Hạt Nguyên Bản</h3>
+            <p className="text-sm leading-relaxed text-stone-400">
+              Để bảo vệ hương vị tinh tế của hạt cà phê sau khi mở túi, bạn nên lưu ý các nguyên tắc bảo quản cơ bản. Cà phê rang mộc rất nhạy cảm với ánh sáng, nhiệt độ, độ ẩm và oxy. Hãy luôn lưu trữ hạt cà phê trong các lọ thủy tinh tối màu hoặc túi zip chuyên dụng có van xả một chiều khí carbon. Tránh để cà phê trong ngăn đá tủ lạnh vì độ ẩm ngưng tụ khi mang ra ngoài sẽ làm hạt nhanh mất mùi hương. Tốt nhất, hãy mua một lượng vừa đủ dùng trong vòng 2 tuần và chỉ xay hạt ngay trước khi tiến hành pha chế để tận hưởng trọn vẹn hương khí thơm nồng của mẻ rang mới.
+            </p>
           </div>
 
           <div className="bg-stone-900/40 border border-stone-900 p-6 rounded-2xl space-y-4">
             <h3 className="text-lg font-serif font-bold text-stone-100 text-center">Cam Kết Chất Lượng Đỉnh Cao Cho Cộng Đồng</h3>
             <p className="text-sm leading-relaxed text-center text-stone-400 max-w-2xl mx-auto">
-              Với sứ mệnh phổ cập văn hóa thưởng thức cà phê sạch và chất lượng cao, Specialty Coffee Space cam kết cung cấp sản phẩm có ngày rang mới nhất dưới 1 tháng, đóng gói trong bao bì chuyên dụng có van một chiều để bảo vệ hạt khỏi oxy hóa. Hãy cùng chúng tôi nâng niu từng giọt cà phê bản nguyên mỗi ngày.
+              Với sứ mệnh phổ cập văn hóa thưởng thức cà phê sạch và chất lượng cao, Specialty Coffee Space cam kết cung cấp sản phẩm có ngày rang mới nhất dưới 1 tháng, đóng gói trong bao bì chuyên dụng có van một chiều để bảo vệ hạt khỏi oxy hóa. Hãy cùng chúng tôi nâng niu từng giọt cà phê bản nguyên mỗi ngày và hướng đến một lối sống xanh, bền vững cùng người nông dân vùng cao.
             </p>
           </div>
         </div>
