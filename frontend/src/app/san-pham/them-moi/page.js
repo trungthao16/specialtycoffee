@@ -47,6 +47,12 @@ export default function AddProductPage() {
     const file = e.target.files[0];
     if (!file) return;
 
+    // Check size limit (max 2MB to prevent Render Free Tier OOM crash)
+    if (file.size > 2 * 1024 * 1024) {
+      setStatus({ type: 'error', message: 'Kích thước ảnh quá lớn (Tối đa 2MB). Vui lòng chọn ảnh nhỏ hơn để tránh quá tải máy chủ.' });
+      return;
+    }
+
     const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
     setLoading(true);
     setStatus({ type: null, message: '' });

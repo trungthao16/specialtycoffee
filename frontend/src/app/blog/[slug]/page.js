@@ -124,13 +124,13 @@ export default async function BlogPostPage({ params }) {
             </h1>
 
             {/* Meta */}
-            <div className="flex flex-wrap items-center gap-6 text-sm text-stone-500 pt-2">
+            <div className="flex flex-wrap items-center gap-6 text-sm text-stone-400 pt-2">
               <span className="flex items-center gap-2">
-                <User className="h-4 w-4 text-stone-600" />
+                <User className="h-4 w-4 text-stone-500" />
                 {post.author}
               </span>
               <span className="flex items-center gap-2">
-                <Calendar className="h-4 w-4 text-stone-600" />
+                <Calendar className="h-4 w-4 text-stone-500" />
                 {new Date(post.createdAt).toLocaleDateString('vi-VN')}
               </span>
             </div>
@@ -149,7 +149,7 @@ export default async function BlogPostPage({ params }) {
 
           {/* Content */}
           <div
-            className="pt-6 border-t border-stone-900 text-stone-300 [&_h2]:text-2xl [&_h2]:font-serif [&_h2]:font-bold [&_h2]:text-amber-500 [&_h2]:mt-8 [&_h2]:mb-4 [&_p]:leading-relaxed [&_p]:text-stone-300 [&_p]:mb-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2 [&_li]:text-stone-300 [&_strong]:text-amber-500 [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:space-y-2"
+            className="pt-6 border-t border-stone-900 text-stone-200 [&_h2]:text-2xl [&_h2]:font-serif [&_h2]:font-bold [&_h2]:text-amber-500 [&_h2]:mt-8 [&_h2]:mb-4 [&_p]:leading-relaxed [&_p]:text-stone-200 [&_p]:mb-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2 [&_li]:text-stone-200 [&_strong]:text-amber-500 [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:space-y-2"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
         </article>

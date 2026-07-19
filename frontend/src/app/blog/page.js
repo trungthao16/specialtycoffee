@@ -104,7 +104,7 @@ export default async function BlogPage() {
                     </h2>
                   </Link>
 
-                  <p className="text-stone-400 text-sm leading-relaxed line-clamp-3">
+                  <p className="text-stone-300 text-sm leading-relaxed line-clamp-3">
                     {post.excerpt}
                   </p>
                 </div>
