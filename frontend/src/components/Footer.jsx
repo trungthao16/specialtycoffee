@@ -69,7 +69,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-stone-900 text-center text-xs">
-          <p>&copy; {new Date().getFullYear()} Specialty Coffee Space. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Specialty Coffee. All rights reserved.</p>
         </div>
       </div>
     </footer>

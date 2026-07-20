@@ -19,7 +19,7 @@ async function getProducts() {
 }
 
 export async function generateMetadata() {
-  let title = "Sản Phẩm Cà Phê Specialty - Specialty Coffee Space";
+  let title = "Sản Phẩm Cà Phê Specialty - Specialty Coffee";
   let description = "Danh mục cà phê hạt specialty chất lượng cao, tuyển chọn Arabica, Robusta Honey Gia Lai rang xay mộc nguyên bản.";
   let keywords = "cà phê specialty, hạt arabica, hạt robusta, rang mộc";
 
@@ -46,7 +46,7 @@ export async function generateMetadata() {
       title,
       description,
       url: '/san-pham',
-      siteName: 'Specialty Coffee Space',
+      siteName: 'Specialty Coffee',
       type: 'website',
     },
   };

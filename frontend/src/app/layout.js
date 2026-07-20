@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Specialty Coffee Space - Cà Phê Specialty Thượng Hạng",
-  description: "Specialty Coffee Space - không gian thưởng thức cà phê đặc sản tinh khiết bản nguyên. Trải nghiệm hương vị mộc thượng hạng từ Ethiopia, Kenya và Gia Lai.",
+  title: "Specialty Coffee - Cà Phê Specialty Thượng Hạng",
+  description: "Specialty Coffee - không gian thưởng thức cà phê đặc sản tinh khiết bản nguyên. Trải nghiệm hương vị mộc thượng hạng từ Ethiopia, Kenya và Gia Lai.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://specialtycoffee-five.vercel.app'),
 };
 

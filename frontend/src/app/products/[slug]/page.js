@@ -30,7 +30,7 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${product.name} - Specialty Coffee Space`,
+    title: `${product.name} - Specialty Coffee`,
     description: product.description,
     alternates: {
       canonical: `/products/${product.slug}`,
@@ -77,7 +77,7 @@ export default async function ProductDetailPage({ params }) {
     sku: product._id,
     brand: {
       '@type': 'Brand',
-      name: 'Specialty Coffee Space',
+      name: 'Specialty Coffee',
     },
     offers: {
       '@type': 'Offer',

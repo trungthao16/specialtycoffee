@@ -46,7 +46,7 @@ export async function generateMetadata() {
       title,
       description,
       url: '/blog',
-      siteName: 'Specialty Coffee Space',
+      siteName: 'Specialty Coffee',
       type: 'website',
     },
   };

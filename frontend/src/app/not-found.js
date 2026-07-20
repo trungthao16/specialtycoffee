@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { Home, Coffee } from 'lucide-react';
 
 export const metadata = {
-  title: '404 - Không Tìm Thấy Trang | Specialty Coffee Space',
-  description: 'Trang bạn tìm kiếm không tồn tại. Quay lại trang chủ Specialty Coffee Space.',
+  title: '404 - Không Tìm Thấy Trang | Specialty Coffee',
+  description: 'Trang bạn tìm kiếm không tồn tại. Quay lại trang chủ Specialty Coffee.',
 };
 
 export default function NotFound() {

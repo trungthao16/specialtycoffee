@@ -3,8 +3,8 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import { ShieldCheck, Heart, Sparkles, Award } from 'lucide-react';
 
 export const metadata = {
-  title: 'Giới Thiệu Về Chúng Tôi - Specialty Coffee Space',
-  description: 'Tìm hiểu về hành trình, sứ mệnh và triết lý rang xay mộc thủ công cà phê đặc sản đạt tiêu chuẩn Specialty tại Specialty Coffee Space.',
+  title: 'Giới Thiệu Về Chúng Tôi - Specialty Coffee',
+  description: 'Tìm hiểu về hành trình, sứ mệnh và triết lý rang xay mộc thủ công cà phê đặc sản đạt tiêu chuẩn Specialty tại Specialty Coffee.',
   alternates: {
     canonical: '/gioi-thieu',
   },
@@ -31,7 +31,7 @@ export default function AboutPage() {
             <span className="text-amber-500">Cà Phê Specialty</span>
           </h1>
           <p className="max-w-2xl mx-auto text-stone-400 text-base md:text-lg leading-relaxed">
-            Specialty Coffee Space được thành lập bởi những tâm hồn say đắm hương vị nguyên bản của hạt cà phê mộc bản, với khát khao nâng tầm văn hóa thưởng thức cà phê đặc sản tại Việt Nam.
+            Specialty Coffee được thành lập bởi những tâm hồn say đắm hương vị nguyên bản của hạt cà phê mộc bản, với khát khao nâng tầm văn hóa thưởng thức cà phê đặc sản tại Việt Nam.
           </p>
         </div>
 

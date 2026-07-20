@@ -28,9 +28,9 @@ async function getSEO() {
     // Return default SEO
   }
   return {
-    title: 'Specialty Coffee Space - Cà Phê Specialty Thượng Hạng',
-    description: 'Specialty Coffee Space - không gian thưởng thức cà phê đặc sản tinh khiết bản nguyên. Trải nghiệm hương vị mộc thượng hạng từ Ethiopia, Kenya và Gia Lai.',
-    keywords: 'cà phê specialty, specialty coffee space, hạt arabica, hạt robusta, rang mộc',
+    title: 'Specialty Coffee - Cà Phê Specialty Thượng Hạng',
+    description: 'Specialty Coffee - không gian thưởng thức cà phê đặc sản tinh khiết bản nguyên. Trải nghiệm hương vị mộc thượng hạng từ Ethiopia, Kenya và Gia Lai.',
+    keywords: 'cà phê specialty, specialty coffee, hạt arabica, hạt robusta, rang mộc',
   };
 }
 
@@ -49,7 +49,7 @@ export async function generateMetadata() {
       title: seo.title,
       description: seo.description,
       url: '/',
-      siteName: 'Specialty Coffee Space',
+      siteName: 'Specialty Coffee',
       type: 'website',
     },
   };
@@ -62,7 +62,7 @@ export default async function Home() {
     '@context': 'https://schema.org',
     '@type': 'Cafe',
     '@id': `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/#cafe`,
-    name: 'Specialty Coffee Space',
+    name: 'Specialty Coffee',
     image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=600',
     description: 'Trải nghiệm cà phê specialty thượng hạng rang xay thủ công.',
     address: {
@@ -101,7 +101,7 @@ export default async function Home() {
         <div className="relative text-center py-32 px-4 rounded-b-[3rem] overflow-hidden border-b border-amber-900/10 shadow-2xl bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-stone-900 via-stone-950 to-stone-950">
           <div className="relative z-10 max-w-3xl mx-auto space-y-6">
             <span className="px-4 py-1.5 bg-amber-700/10 text-amber-500 rounded-full text-xs font-bold uppercase tracking-widest border border-amber-700/20">
-              Specialty Coffee Space
+              Specialty Coffee
             </span>
             <h1 className="text-5xl md:text-7xl font-sans font-black tracking-tight text-stone-100 leading-tight">
               Specialty Coffee <br />
@@ -149,9 +149,9 @@ export default async function Home() {
         {/* SEO Rich Text Content Section */}
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-stone-900 pt-16 space-y-10 text-stone-300 font-sans pb-16">
           <div className="space-y-4">
-            <h2 className="text-3xl font-sans font-bold text-stone-100 text-center">Specialty Coffee Space - Định Nghĩa Trải Nghiệm Cà Phê Bản Nguyên</h2>
+            <h2 className="text-3xl font-sans font-bold text-stone-100 text-center">Specialty Coffee - Định Nghĩa Trải Nghiệm Cà Phê Bản Nguyên</h2>
             <p className="leading-relaxed text-stone-400">
-              Chào mừng bạn đến với <strong>Specialty Coffee Space</strong>, không gian dành riêng cho những tín đồ yêu thích hương vị thuần khiết và tinh tế nhất của cà phê đặc sản. Chúng tôi tự hào mang đến những hạt cà phê đạt tiêu chuẩn Specialty thượng hạng, được thu hoạch thủ công tại các nông hộ và vùng trồng trứ danh trên toàn thế giới cũng như tại các cao nguyên Việt Nam. Chúng tôi tin rằng mỗi ly Specialty Coffee không chỉ đơn giản là thức uống tiếp năng lượng, mà còn là một câu chuyện dài về nguồn cội đất đai và niềm đam mê trọn vẹn của những người làm nghề.
+              Chào mừng bạn đến với <strong>Specialty Coffee</strong>, không gian dành riêng cho những tín đồ yêu thích hương vị thuần khiết và tinh tế nhất của cà phê đặc sản. Chúng tôi tự hào mang đến những hạt cà phê đạt tiêu chuẩn Specialty thượng hạng, được thu hoạch thủ công tại các nông hộ và vùng trồng trứ danh trên toàn thế giới cũng như tại các cao nguyên Việt Nam. Chúng tôi tin rằng mỗi ly Specialty Coffee không chỉ đơn giản là thức uống tiếp năng lượng, mà còn là một câu chuyện dài về nguồn cội đất đai và niềm đam mê trọn vẹn của những người làm nghề.
             </p>
           </div>
 
@@ -159,7 +159,7 @@ export default async function Home() {
             <div className="space-y-3">
               <h3 className="text-xl font-sans font-bold text-amber-500">Nguồn Gốc Hạt Specialty Coffee</h3>
               <p className="text-sm leading-relaxed text-stone-400">
-                Mỗi hạt Specialty Coffee tại Specialty Coffee Space đều có một câu chuyện nguồn gốc rõ ràng (Single Origin). Từ vùng đất <strong>Ethiopia Yirgacheffe</strong> thanh tao với hương hoa nhài và vị chua sáng của chanh vàng, đến vùng đất <strong>Kenya Nyeri</strong> đậm đà quả mọng ngọt lịm. Bên cạnh đó, giống hạt Robusta Honey từ Gia Lai cũng được chúng tôi lựa chọn kỹ lưỡng, mang lại trải nghiệm đậm đà ngọt hậu khó quên. Chúng tôi trực tiếp làm việc với các hợp tác xã địa phương để đảm bảo từng hạt Specialty Coffee chín đỏ được thu hoạch đồng đều nhất.
+                Mỗi hạt Specialty Coffee tại Specialty Coffee đều có một câu chuyện nguồn gốc rõ ràng (Single Origin). Từ vùng đất <strong>Ethiopia Yirgacheffe</strong> thanh tao với hương hoa nhài và vị chua sáng của chanh vàng, đến vùng đất <strong>Kenya Nyeri</strong> đậm đà quả mọng ngọt lịm. Bên cạnh đó, giống hạt Robusta Honey từ Gia Lai cũng được chúng tôi lựa chọn kỹ lưỡng, mang lại trải nghiệm đậm đà ngọt hậu khó quên. Chúng tôi trực tiếp làm việc với các hợp tác xã địa phương để đảm bảo từng hạt Specialty Coffee chín đỏ được thu hoạch đồng đều nhất.
               </p>
             </div>
             <div className="space-y-3">
@@ -174,7 +174,7 @@ export default async function Home() {
           <div className="space-y-4 pt-4 border-t border-stone-900/50">
             <h3 className="text-xl font-sans font-bold text-stone-100">Tiêu Chuẩn Đánh Giá Hạt Specialty Coffee (Grading)</h3>
             <p className="text-sm leading-relaxed text-stone-400">
-              Khái niệm Specialty Coffee không phải là một danh xưng tự phong, mà được định nghĩa chính thức bởi Hiệp hội Cà phê Đặc sản Quốc tế (SCA). Chỉ những hạt cà phê nhân xanh đạt điểm số thử nếm (Cup Score) từ 80 điểm trở lên trên thang điểm 100 mới được công nhận là Specialty. Quy trình đánh giá này bao gồm việc chấm điểm nghiêm ngặt các yếu tố: hương thơm khô và ướt (Fragrance/Aroma), hương vị (Flavor), hậu vị (Aftertaste), độ chua (Acidity), thể chất (Body), độ ngọt (Sweetness) và sự đồng đều (Uniformity). Tại Specialty Coffee Space, chúng tôi luôn chọn lọc những lô hàng có điểm số thử nếm tối thiểu từ 84 trở lên để phục vụ quý khách.
+              Khái niệm Specialty Coffee không phải là một danh xưng tự phong, mà được định nghĩa chính thức bởi Hiệp hội Cà phê Đặc sản Quốc tế (SCA). Chỉ những hạt cà phê nhân xanh đạt điểm số thử nếm (Cup Score) từ 80 điểm trở lên trên thang điểm 100 mới được công nhận là Specialty. Quy trình đánh giá này bao gồm việc chấm điểm nghiêm ngặt các yếu tố: hương thơm khô và ướt (Fragrance/Aroma), hương vị (Flavor), hậu vị (Aftertaste), độ chua (Acidity), thể chất (Body), độ ngọt (Sweetness) và sự đồng đều (Uniformity). Tại Specialty Coffee, chúng tôi luôn chọn lọc những lô hàng có điểm số thử nếm tối thiểu từ 84 trở lên để phục vụ quý khách.
             </p>
           </div>
 
@@ -188,7 +188,7 @@ export default async function Home() {
           <div className="bg-stone-900/40 border border-stone-900 p-6 rounded-2xl space-y-4">
             <h3 className="text-lg font-sans font-bold text-stone-100 text-center">Cam Kết Chất Lượng Specialty Coffee Đỉnh Cao</h3>
             <p className="text-sm leading-relaxed text-center text-stone-400 max-w-2xl mx-auto">
-              Với sứ mệnh phổ cập văn hóa thưởng thức Specialty Coffee sạch và chất lượng cao, Specialty Coffee Space cam kết cung cấp sản phẩm có ngày rang mới nhất dưới 1 tháng, đóng gói trong bao bì chuyên dụng có van một chiều để bảo vệ hạt khỏi oxy hóa. Hãy cùng chúng tôi nâng niu từng giọt Specialty Coffee bản nguyên mỗi ngày và hướng đến một lối sống xanh, bền vững cùng người nông dân vùng cao.
+              Với sứ mệnh phổ cập văn hóa thưởng thức Specialty Coffee sạch và chất lượng cao, Specialty Coffee cam kết cung cấp sản phẩm có ngày rang mới nhất dưới 1 tháng, đóng gói trong bao bì chuyên dụng có van một chiều để bảo vệ hạt khỏi oxy hóa. Hãy cùng chúng tôi nâng niu từng giọt Specialty Coffee bản nguyên mỗi ngày và hướng đến một lối sống xanh, bền vững cùng người nông dân vùng cao.
             </p>
           </div>
         </div>

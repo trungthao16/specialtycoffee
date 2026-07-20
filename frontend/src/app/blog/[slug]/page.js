@@ -30,7 +30,7 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${post.title} - Specialty Coffee Space`,
+    title: `${post.title} - Specialty Coffee`,
     description: post.excerpt,
     alternates: {
       canonical: `/blog/${post.slug}`,
@@ -75,7 +75,7 @@ export default async function BlogPostPage({ params }) {
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Specialty Coffee Space',
+      name: 'Specialty Coffee',
       logo: {
         '@type': 'ImageObject',
         url: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=600',
